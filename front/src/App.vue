@@ -64,7 +64,7 @@ watch(route, () => {
 })
 
 onMounted(() => {
-  fetch(`https://nuit-info.univ-brest.fr/~team7/index.php?route=api/data`)
+  fetch(`/index.php?route=api/data`)
     .then(r => r.json())
     .then(d => data.value = d)
     .catch(console.error)

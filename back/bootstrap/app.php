@@ -17,5 +17,5 @@ return Application::configure(basePath: dirname(__DIR__))
         //
     })
     ->registered(function ($app) {
-	    $app->usePublicPath(path: realpath(base_path('public_html')));
+	    $app->usePublicPath(path: realpath(base_path('html')));
     })->create();

@@ -45,7 +45,7 @@ const moveLogo = () => {
 
 const handleClick = (event) => {
     const bodyStyle = document.body.style;
-    bodyStyle.backgroundImage = "url('/~team7/dist/logo.jpg')";
+    bodyStyle.backgroundImage = "url('/dist/logo.jpg')";
     bodyStyle.backgroundSize = 'contain';
     document.body.classList.add('rotating-background');
     setTimeout(() => {

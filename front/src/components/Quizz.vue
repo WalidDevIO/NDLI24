@@ -56,7 +56,7 @@ const end = computed(() => quizz.value?.length == questionIndex.value)
 const actual = computed(() => quizz.value[questionIndex.value])
 
 onMounted(async () => {
-    fetch(`https://nuit-info.univ-brest.fr/~team7/index.php?route=api/quizz/${props.name}`)
+    fetch(`/index.php?route=api/quizz/${props.name}`)
         .then(r => r.json())
         .then(d => data.value = d)
         .catch(() => error.value = true)

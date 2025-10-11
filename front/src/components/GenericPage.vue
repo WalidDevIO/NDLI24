@@ -31,7 +31,7 @@ const props = defineProps({
 })
 
 const launchFetching = (part) => {
-    fetch(`https://nuit-info.univ-brest.fr/~team7/index.php?route=api/contenu/${props.title}/${part}`)
+    fetch(`/index.php?route=api/contenu/${props.title}/${part}`)
         .then(r => r.json())
         .then(d => data.value = d)
         .catch(() => error.value = true)
