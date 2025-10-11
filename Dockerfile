@@ -23,4 +23,7 @@ RUN composer update -d /var/www/
 RUN composer install -d /var/www/ --no-dev --optimize-autoloader
 RUN chown -R www-data:www-data /var/www/
 
+#Install pdo_mysql extension
+RUN docker-php-ext-install pdo_mysql zip
+
 EXPOSE 80
